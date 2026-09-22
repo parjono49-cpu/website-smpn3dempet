@@ -3,22 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SMP Negeri 3 Dempet</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #00695c, #00897b);
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        nav {
+            background: #004d40;
+            text-align: center;
+            padding: 14px 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            color: #00695c;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #00695c;
+            margin-bottom: 30px;
+            font-size: 27px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .about p {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: #004d40;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>SELAMAT DATANG</h1>
+    <!-- HEADER -->
+    <header>
+        <h1>SMP NEGERI 3 DEMPET</h1>
+        <p>Belajar • Berkarakter • Berprestasi</p>
+    </header>
 
-    <h2>SMP NEGERI 3 DEMPET</h2>
+    <!-- MENU -->
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#program">Program</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
 
-    <p>Website resmi SMP Negeri 3 Dempet</p>
+    <!-- BERANDA -->
+    <section class="hero" id="beranda">
+        <h2>SELAMAT DATANG</h2>
 
-    <hr>
+        <p>
+            Selamat datang di website SMP Negeri 3 Dempet.
+            Mari bersama membangun generasi yang beriman,
+            berkarakter, berprestasi, dan siap menghadapi masa depan.
+        </p>
+    </section>
 
-    <p>
-        Belajar, Berkarakter, Berprestasi.
-    </p>
+    <!-- PROFIL -->
+    <section class="container" id="profil">
+
+        <h2 class="section-title">Profil Sekolah</h2>
+
+        <div class="about">
+
+            <p>
+                <strong>SMP Negeri 3 Dempet</strong> merupakan satuan
+                pendidikan yang berkomitmen memberikan layanan pendidikan
+                yang berkualitas bagi peserta didik.
+            </p>
+
+            <p>
+                Pendidikan tidak hanya berorientasi pada prestasi akademik,
+                tetapi juga pembentukan karakter, akhlak mulia,
+                keterampilan, dan kepedulian terhadap lingkungan.
+            </p>
+
+            <p>
+                Dengan semangat <strong>Belajar, Berkarakter, Berprestasi</strong>,
+                seluruh warga sekolah bersama-sama menciptakan lingkungan
+                pendidikan yang aman, nyaman, religius, dan inspiratif.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PROGRAM -->
+    <section class="container" id="program">
+
+        <h2 class="section-title">Program Unggulan</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📚 Pembelajaran</h3>
+                <p>
+                    Pembelajaran aktif, kreatif, dan menyenangkan
+                    untuk meningkatkan kompetensi peserta didik.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌱 Pendidikan Karakter</h3>
+                <p>
+                    Membentuk peserta didik yang berakhlak mulia,
+                    disiplin, mandiri, dan bertanggung jawab.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🏆 Prestasi</h3>
+                <p>
+                    Mengembangkan potensi peserta didik melalui
+                    berbagai kegiatan akademik dan nonakademik.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤝 Kepedulian</h3>
+                <p>
+                    Menumbuhkan semangat gotong royong,
+                    kepedulian sosial, dan cinta lingkungan.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- KONTAK -->
+    <section class="container" id="kontak">
+
+        <h2 class="section-title">Informasi Sekolah</h2>
+
+        <div class="about">
+
+            <p><strong>Nama Sekolah:</strong> SMP Negeri 3 Dempet</p>
+
+            <p><strong>Website:</strong> SMP Negeri 3 Dempet</p>
+
+            <p>
+                <strong>Semboyan:</strong>
+                Belajar, Berkarakter, Berprestasi
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p><strong>SMP NEGERI 3 DEMPET</strong></p>
+
+        <p>Belajar • Berkarakter • Berprestasi</p>
+
+        <p>© 2026 SMP Negeri 3 Dempet</p>
+
+    </footer>
 
 </body>
 </html>
